@@ -21,7 +21,7 @@ export default function photos(state = initialState, action) {
             return { ...state, fetching: true }
 
         case LOAD_BY_LETTER + SUCCESS:
-            return { ...state, currentLetter: action.payload.letter, tablesByLetters: {
+            return { ...state, tableNames: [], currentLetter: action.payload.letter, tablesByLetters: {
                 ...state.tablesByLetters,
                 [action.payload.letter]: action.response
             },
