@@ -1,0 +1,71 @@
+$body-color: rgb(0, 0, 0);
+$red-color: rgb(192,4, 4);
+
+body {
+  color: $body-color;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 15px;
+}
+.App {
+  & > div {
+    text-align: center;
+  }
+}
+.align-center {
+  text-align: center !important;
+}
+
+/* Helpers */
+
+/* alerts */
+
+.alert {
+  padding: 15px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  h4 {
+    margin-top: 0;
+    color: inherit;
+    font-size: 120%;
+  }
+  .alert-link {
+    font-weight: 300;
+  }
+  >p {
+    margin-bottom: 0;
+  }
+  >ul {
+    margin-bottom: 0;
+  }
+}
+.alert-success {
+  background-color: #dff0d8;
+  border: solid 1px #3b6533;
+  color: #3c763d !important;
+}
+.alert-info {
+  background-color: #31708f;
+  border: solid 1px #c4ebf3;
+  color: #d9edf7;
+}
+.alert-warning {
+  background-color: #fcf8e3;
+  border: solid 1px #faebcc;
+  color: #8a6d3b;
+}
+.alert-danger {
+  background-color: #f2dede;
+  border: solid 1px #ebccd1;
+  color: #a94442 !important;
+}
+.alert-success-button {
+  margin: 10px auto 5px auto;
+  border: none;
+  padding: 6px 12px;
+  font: 500 14px 'PT Sans';
+  color: #fff;
+  background-color: #be0503;
+  outline: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

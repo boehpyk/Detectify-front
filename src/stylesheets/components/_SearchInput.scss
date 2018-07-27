@@ -1,0 +1,12 @@
+.Search {
+  text-align: left;
+  h2 {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 18px;
+  }
+  input[type=text] {
+    width: 300px;
+    padding: 7px;
+  }
+}

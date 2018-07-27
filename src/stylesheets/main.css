@@ -1,0 +1,267 @@
+/* Breakpoints */
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.hidden {
+  display: none !important; }
+
+.visible {
+  display: block !important; }
+
+.invisible {
+  visibility: hidden; }
+
+.full-width {
+  width: 100%; }
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both; }
+
+@media (max-width: 480px) {
+  .hidden-xs {
+    display: none; } }
+
+@media (min-width: 481px) {
+  .hidden-xs {
+    display: block; } }
+
+@media (max-width: 480px) {
+  .visible-xs {
+    display: block; } }
+
+@media (min-width: 481px) {
+  .visible-xs {
+    display: none; } }
+
+@media (max-width: 768px) {
+  .visible-sm {
+    display: block; } }
+
+@media (min-width: 769px) {
+  .visible-sm {
+    display: none; } }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button, input {
+  outline: none; }
+
+body {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 15px; }
+
+.App > div {
+  text-align: center; }
+
+.align-center {
+  text-align: center !important; }
+
+/* Helpers */
+/* alerts */
+.alert {
+  padding: 15px;
+  border: 1px solid transparent;
+  border-radius: 6px; }
+  .alert h4 {
+    margin-top: 0;
+    color: inherit;
+    font-size: 120%; }
+  .alert .alert-link {
+    font-weight: 300; }
+  .alert > p {
+    margin-bottom: 0; }
+  .alert > ul {
+    margin-bottom: 0; }
+
+.alert-success {
+  background-color: #dff0d8;
+  border: solid 1px #3b6533;
+  color: #3c763d !important; }
+
+.alert-info {
+  background-color: #31708f;
+  border: solid 1px #c4ebf3;
+  color: #d9edf7; }
+
+.alert-warning {
+  background-color: #fcf8e3;
+  border: solid 1px #faebcc;
+  color: #8a6d3b; }
+
+.alert-danger {
+  background-color: #f2dede;
+  border: solid 1px #ebccd1;
+  color: #a94442 !important; }
+
+.alert-success-button {
+  margin: 10px auto 5px auto;
+  border: none;
+  padding: 6px 12px;
+  font: 500 14px 'PT Sans';
+  color: #fff;
+  background-color: #be0503;
+  outline: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
+
+.ReactModal {
+  position: absolute;
+  top: 40px;
+  bottom: 40px;
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 900px;
+  padding: 25px;
+  outline: none;
+  overflow-y: auto;
+  overflow-x: hidden; }
+  @media only screen and (max-width: 993px) {
+    .ReactModal {
+      left: 5%; } }
+  @media only screen and (min-width: 992px) {
+    .ReactModal {
+      left: 50%;
+      margin-left: -450px; } }
+
+.ReactModal-Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); }
+
+.ReactModal__Body--open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%; }
+
+.ModalContent {
+  position: relative;
+  color: #000;
+  height: 100%;
+  overflow: hidden; }
+  @media only screen and (max-width: 769px) {
+    .ModalContent {
+      overflow: auto; } }
+  .ModalContent .slick-track {
+    transition: transform 600ms ease; }
+
+.ModalContent-close {
+  position: absolute;
+  top: -8px;
+  right: -2px;
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
+  background: transparent; }
+
+.ModalContent-wrapper {
+  position: relative; }
+
+.ModalContent-content {
+  position: relative;
+  height: 500px;
+  overflow-y: auto; }
+  @media only screen and (max-width: 769px) {
+    .ModalContent-content {
+      height: auto; } }
+  .ModalContent-content .loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    height: 200px;
+    margin: -100px 0 0 -150px;
+    color: #000000;
+    z-index: 1;
+    font-family: 'PT Sans Narrow';
+    font-size: 34px;
+    text-align: center; }
+
+.Table-Modal h1 {
+  margin-bottom: 20px;
+  padding: 15px;
+  width: 100%;
+  background-color: #eaeaea;
+  font-size: 20px; }
+
+.Table-Modal p {
+  font-size: 14px;
+  margin-bottom: 10px; }
+
+.Table-Modal table {
+  font-size: 14px;
+  text-align: left;
+  border-collapse: collapse;
+  margin: 20px 0; }
+  .Table-Modal table td, .Table-Modal table th {
+    padding: 5px;
+    border: solid 1px #727272; }
+  .Table-Modal table th {
+    background-color: #eaeaea;
+    font-weight: bold; }
+  .Table-Modal table td {
+    background: none; }
+
+.Search {
+  text-align: left; }
+  .Search h2 {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 18px; }
+  .Search input[type=text] {
+    width: 300px;
+    padding: 7px; }
+
+.TablesList {
+  text-align: left;
+  margin-top: 20px; }
+  .TablesList ul {
+    font-weight: normal; }
+    .TablesList ul li {
+      cursor: pointer;
+      font-size: 13px;
+      margin-bottom: 5px; }
