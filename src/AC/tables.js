@@ -8,6 +8,7 @@ export function loadTableIntoModal(tableId) {
         const table = getState().tables[tableId];
 
         if (table && table.title) return;
+
         dispatch({
             type: LOAD_TABLE,
             payload: { tableId },

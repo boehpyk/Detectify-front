@@ -55,7 +55,7 @@ class ShowTableModal extends Component {
         const arrToRender = (table.tableOrientation === 'VERTICAL') ? this.transpose(table.relation) : table.relation;
 
         const res = arrToRender.reduce((str, current, index) => {
-            return str += (table.hasHeader && index == 0) ? `<tr><th>${current.join('</th><th>')}</th></tr>` : `<tr><td>${current.join('</td><td>')}</td></tr>`;
+            return str += (table.hasHeader && index === 0) ? `<tr><th>${current.join('</th><th>')}</th></tr>` : `<tr><td>${current.join('</td><td>')}</td></tr>`;
         }, '<table><tbody>');
         return res + '</tbody></table>';
     }

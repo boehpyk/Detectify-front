@@ -18,7 +18,9 @@ class TablesList extends Component {
 
     showTablesList = () => {
         const fetching = this.props.fetching;
-        const articles = this.props.articles || [];
+
+        const articles = (this.props.articles && this.props.articles.length >0 ) ? this.props.articles :  ((this.props.articlesByLetter && this.props.articlesByLetter.length > 0) ? this.props.articlesByLetter : []);
+
         if (fetching) {
             return <Loader text="Loading articles" />
         }
@@ -49,5 +51,6 @@ class TablesList extends Component {
 // export default TablesList;
 export default connect((state) => ({
     articles: state.search.tableNames,
+    articlesByLetter: state.search.tablesByLetters[state.search.currentLetter],
     fetching: state.search.fetching
 }), { openModal })(TablesList);

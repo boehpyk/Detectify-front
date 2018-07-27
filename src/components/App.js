@@ -4,6 +4,7 @@ import Modal from 'react-modal';
 import ShowTableModal from './Modal/ShowTableModal';
 import SearchInput from './SearchInput';
 import TablesList from './TablesList';
+import AlphabeticalIndex from './AplhabeticalIndex';
 import { hideModal } from '../AC/modals';
 
 
@@ -33,6 +34,7 @@ class App extends Component {
       <div className="App">
           <div>
               <SearchInput />
+              <AlphabeticalIndex />
               <TablesList />
           </div>
 

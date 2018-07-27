@@ -14,11 +14,14 @@ export function loadTablesByString(str) {
 
 export function loadTablesByLetter(letter) {
     return (dispatch, getState) => {
+        const tables = getState().tablesByLetters && getState().tablesByLetters[letter];
+
+        if (tables && tables.length > 0) return;
 
         dispatch({
             type: LOAD_BY_LETTER,
             payload: {letter},
-            callAPI: `${GLOBAL_URL}/api/search/?letter=${letter}`
+            callAPI: `${GLOBAL_URL}/api/letter/?letter=${letter}`
         })
     }
 }
